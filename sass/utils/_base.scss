@@ -1,0 +1,62 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $text-primary;
+  background-color: $background-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+
+  &--position {
+    padding-bottom: 0;
+  }
+
+  &--bcg {
+    background-color: $background-tertiary;
+  }
+}
+
+.section__heading {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: $background-secondary;
+  padding: 60px 0;
+}

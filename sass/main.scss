@@ -1,0 +1,27 @@
+@import "./utils/variables"; //variable collors and fonts
+@import "./utils/base"; //global reset and style
+@import "./components/header-wrapper"; //line and wrapper
+@import "./components/logo"; //also in footer
+@import "./components/navigation";
+@import "./components/contact";
+
+@import "./components/overlay-main"; //main overlay - big picture under post
+@import "./components/overlay-post"; //post and btn - without main overlay
+@import "./components/strenght-wrapper"; //second section - agency page
+@import "./components/strenght-card"; //item-card in second section - agency page
+@import "./components/we-do"; //what-we-do third section
+@import "./components/team-wrapper"; //team section
+@import "./components/team"; //team-card without social-links
+@import "./components/social-list"; //common for team-card and footer-center
+@import "./components/clients"; //clients section with icons
+
+@import "./components/footer-wrapper";
+@import "./components/footer-left"; //margin-right
+@import "./components/adress"; //footer - adress group
+@import "./components/footer-center"; // heading without social-links
+@import "./components/footer-right"; //Newsletter input with btn send
+
+@import "./components/modal"; //modal window with backdrop
+
+@import "./components/filter"; //Portfolio page - filter-group made with btn
+@import "./components/portfolio-cards"; //cards with overlay blue card

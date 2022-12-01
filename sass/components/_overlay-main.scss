@@ -1,0 +1,12 @@
+.main-overlay-img {
+  background-color: $background-secondary;
+  display: block;
+  background-image: linear-gradient(
+      #2f303a66,
+      #2f303a66 /* rgba(47, 48, 58, 0.4), */ /* rgba(47, 48, 58, 0.4) */
+    ),
+    url(../images/mainheaderbcg.jpg);
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
+}

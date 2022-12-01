@@ -1,0 +1,28 @@
+.what-we-do {
+  display: flex;
+  gap: 30px;
+
+  &__item-position {
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $text-tertiary;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 27px 0;
+    background-color: $label-background-primary;
+  }
+}
