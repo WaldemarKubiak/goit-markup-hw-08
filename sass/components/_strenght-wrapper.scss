@@ -1,4 +1,20 @@
 .strenghts-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 30px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-direction: unset;
+    flex-wrap: nowrap;
+  }
 }
+
+// .strenghts-wrapper {
+//   display: flex;
+//   gap: 30px;
+// }

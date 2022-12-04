@@ -47,7 +47,11 @@ a {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 94px 0;
+  }
 
   &--position {
     padding-bottom: 0;
