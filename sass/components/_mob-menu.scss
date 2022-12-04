@@ -1,0 +1,50 @@
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-primary;
+  z-index: 10;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(-100%);
+  transition: transform $transition-time-animation;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: $background-primary;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  fill: $icon-tertiary;
+  cursor: pointer;
+
+  &__icon {
+    margin: auto;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    fill: $accent-primary;
+  }
+
+  &:visited {
+    fill: $icon-tertiary;
+  }
+}

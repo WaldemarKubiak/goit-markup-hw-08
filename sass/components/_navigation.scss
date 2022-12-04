@@ -1,7 +1,15 @@
 .nav-page {
   display: flex;
   align-items: center;
-  gap: 46px;
+  gap: 60px;
+
+  @include phone {
+    display: none;
+  }
+
+  @include desktop {
+    gap: 46px;
+  }
 }
 
 .nav-page__link {
@@ -29,7 +37,7 @@
     background-color: $accent-primary;
     border-radius: 2px;
     position: absolute;
-    bottom: -32px; /* 28px + 4px +/- 1px  --or--  top: 47px; */ /* 14px + 28px + 4px */
+    bottom: -32px;
   }
 
   &:visited {

@@ -1,0 +1,32 @@
+.toggle-btn {
+  width: 40px;
+  height: 40px;
+  background-color: $background-primary;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  fill: $icon-tertiary;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  &__icon {
+    margin: auto;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    fill: $accent-primary;
+  }
+
+  &:visited {
+    fill: $icon-tertiary;
+  }
+}

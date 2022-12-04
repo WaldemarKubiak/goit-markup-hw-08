@@ -1,0 +1,29 @@
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: auto;
+}
+
+.mobile-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $text-primary;
+  transition: color $transition-time-animation;
+
+  &:hover,
+  &:focus {
+    color: $accent-primary;
+  }
+
+  //   &:visited {
+  //     color: inherit;
+  //   }
+}
+
+.mobile-nav__link--accent {
+  color: $accent-primary;
+}

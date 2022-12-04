@@ -1,10 +1,17 @@
 @import "./utils/variables"; //variable collors and fonts
+@import "./utils/media-query"; //mixins for media-querry
 @import "./utils/base"; //global reset and style
+// @import "./components/mob-header-wrapper"; //mobie header-wrapper
+@import "./components/mob-toggle-btn"; //mobile toggle-btn with open-mobile-menu
 @import "./components/header-wrapper"; //line and wrapper
 @import "./components/logo"; //also in footer
+@import "./components/mob-menu"; //mobile menu
+@import "./components/mob-menu-nav"; //mobile menu navigation
+@import "./components/mob-menu-contact"; //mobile menu contacts phone and email
+@import "./components/mob-menu-social"; //mobile social-media
 @import "./components/navigation";
 @import "./components/contact";
-
+@import "./components/mob-is-open"; //open mobile menu action
 @import "./components/overlay-main"; //main overlay - big picture under post
 @import "./components/overlay-post"; //post and btn - without main overlay
 @import "./components/strenght-wrapper"; //second section - agency page

@@ -19,7 +19,100 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
+    <!-- ===== HEADER PAGE ===== -->
     <header class="header-line">
+      <!-- mobile-header - start -->
+      <!-- <div class="mobile-header-page"> -->
+      <!-- <a href="./index.html" class="logo mobile-header-page__logo"
+          >Web<span class="logo__dark-theme">Studio</span></a
+        > -->
+      <!-- <button
+          type="button"
+          class="toggle-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile"
+        >
+          <svg class="toggle-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-toggle"></use>
+          </svg>
+        </button> -->
+      <!-- </div> -->
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="mobile-menu__btn-close js-close-menu">
+          <svg class="mobile-menu__icon-close" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a
+              href="./index.html"
+              class="mobile-nav__link mobile-nav__link--accent"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Portfolio</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a href="tel:+48111111111" class="mobile-contact__link-phone"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li class="mobile-contact__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contact__link-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-list">
+          <li class="mobile-social-list__item">
+            <a
+              href=""
+              target="_blank"
+              rel="external noopener noreferrer"
+              class="mobile-social-list__link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social-list__item">
+            <a
+              href=""
+              target="_blank"
+              rel="external noopener noreferrer"
+              class="mobile-social-list__link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social-list__item">
+            <a
+              href=""
+              target="_blank"
+              rel="external noopener noreferrer"
+              class="mobile-social-list__link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-social-list__item">
+            <a
+              href=""
+              target="_blank"
+              rel="external noopener noreferrer"
+              class="mobile-social-list__link mobile-social-list__link--alone"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- mobile-header - end -->
       <div class="header-page container">
         <a href="./index.html" class="logo header-page__logo"
           >Web<span class="logo__dark-theme">Studio</span></a
@@ -40,6 +133,17 @@
               <a href="./index.html" class="nav-page__link">Kontakt</a>
             </li>
           </ul>
+
+          <button
+            type="button"
+            class="toggle-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile"
+          >
+            <svg class="toggle-btn__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mob-toggle"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="contact-header">
           <li class="contact-header__item">
@@ -60,7 +164,8 @@
       </div>
     </header>
     <main>
-      <section class="main-overlay-img">
+      <!-- ===== main header with overlay section ===== -->
+      <!-- <section class="main-overlay-img">
         <div class="main-post container">
           <h1 class="main-post__title main-post__title--position">
             efektywne rozwiązania dla waszego biznesu
@@ -123,8 +228,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
+      </section> -->
+      <!-- ===== main - section what we do ===== -->
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section__heading">Czym się zajmujemy</h2>
           <ul class="what-we-do">
@@ -160,8 +266,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section section--bcg">
+      </section> -->
+      <!-- ===== main section Team ===== -->
+      <!-- <section class="section section--bcg">
         <div class="container">
           <h2 class="section__heading">Nasz zespół</h2>
           <ul class="team-cards">
@@ -323,16 +430,23 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
+      </section> -->
+      <!-- ===== main section clients ===== -->
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section__heading">Nasi klienci</h2>
           <ul class="client-list">
             <li class="client-list__item">
               <a href="#" class="client-list__link"
                 ><svg width="170" height="92">
+                  <use href="./images/icons.svg#icon-client-1-yaco"></use></svg
+              ></a>
+            </li>
+            <li class="client-list__item">
+              <a href="#" class="client-list__link"
+                ><svg width="170" height="92">
                   <use
-                    href="./images/icons.svg#icon-client-list-1-yaco"
+                    href="./images/icons.svg#icon-client-2-company-th"
                   ></use></svg
               ></a>
             </li>
@@ -340,7 +454,7 @@
               <a href="#" class="client-list__link"
                 ><svg width="170" height="92">
                   <use
-                    href="./images/icons.svg#icon-client-list-2-company-th"
+                    href="./images/icons.svg#icon-client-3-company"
                   ></use></svg
               ></a>
             </li>
@@ -348,39 +462,30 @@
               <a href="#" class="client-list__link"
                 ><svg width="170" height="92">
                   <use
-                    href="./images/icons.svg#icon-client-list-3-company"
+                    href="./images/icons.svg#icon-client-4-fospet"
                   ></use></svg
               ></a>
             </li>
             <li class="client-list__item">
               <a href="#" class="client-list__link"
                 ><svg width="170" height="92">
-                  <use
-                    href="./images/icons.svg#icon-client-list-4-fospet"
-                  ></use></svg
+                  <use href="./images/icons.svg#icon-client-5-brand"></use></svg
               ></a>
             </li>
             <li class="client-list__item">
               <a href="#" class="client-list__link"
                 ><svg width="170" height="92">
                   <use
-                    href="./images/icons.svg#icon-client-list-5-brand"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="client-list__item">
-              <a href="#" class="client-list__link"
-                ><svg width="170" height="92">
-                  <use
-                    href="./images/icons.svg#icon-client-list-6-company-tagline"
+                    href="./images/icons.svg#icon-client-6-company-tagline"
                   ></use></svg
               ></a>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- ===== FOOTER ===== -->
+    <!-- <footer class="footer">
       <div class="container footer-wrapper">
         <div class="footer-left">
           <a href="./index.html" class="logo footer-left__logo"
@@ -461,8 +566,9 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- ===== MODAL WINDOW ===== -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn-close" data-modal-close>
           <svg width="11" height="11">
@@ -547,7 +653,8 @@
           <button type="submit" class="data-form__btn">Wyślij</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
