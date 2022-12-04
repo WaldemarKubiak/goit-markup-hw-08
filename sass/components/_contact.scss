@@ -1,13 +1,13 @@
 .contact-header {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  margin-left: auto;
-  gap: 10px;
-  // gap: 30px;
-  @include phone {
-    display: none;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
   }
+
   @include desktop {
     flex-direction: row;
     align-items: center;
