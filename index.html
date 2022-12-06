@@ -178,7 +178,7 @@
         </div>
       </section>
       <!-- strenghts section -->
-      <section class="section section--position">
+      <section class="section-strenghts section-strenghts--position">
         <div class="container">
           <ul class="strenghts-wrapper">
             <li class="strenght-card">
@@ -232,10 +232,11 @@
           </ul>
         </div>
       </section>
-      <!-- ===== main - section what we do ===== -->
-      <!-- <section class="section">
+      <!-- ===== main - section What We Do ===== 
+      ==================only for Desktop =======-->
+      <section class="section-wedo">
         <div class="container">
-          <h2 class="section__heading">Czym się zajmujemy</h2>
+          <h2 class="section-wedo__heading">Czym się zajmujemy</h2>
           <ul class="what-we-do">
             <li class="what-we-do__item-position">
               <img
@@ -269,20 +270,55 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ===== main section Team ===== -->
-      <!-- <section class="section section--bcg">
+      <section class="section-team section-team--bcg">
         <div class="container">
-          <h2 class="section__heading">Nasz zespół</h2>
+          <h2 class="section-team__heading">Nasz zespół</h2>
           <ul class="team-cards">
             <li class="team-card">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/manone-mobile450.jpg    1x,
+                    ./images/manone-mobile450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/manone-tablet354.jpg    1x,
+                    ./images/manone-tablet354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/manone-desktop270.jpg    1x,
+                    ./images/manone-desktop270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/manone-desktop270.jpg"
+                  alt="Projektant produktu"
+                />
+              </picture>
+
+              <!-- <img
                 class="team-card__photo"
                 src="./images/manone.jpg"
                 alt="Projektant produktu"
                 width="270"
                 height="260"
-              />
+              /> -->
               <h4 class="team-card__name">John Doe</h4>
               <p class="team-card__job">Product Designer</p>
               <ul class="social-list social-list--position">
@@ -315,13 +351,48 @@
               </ul>
             </li>
             <li class="team-card">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/women-mobile450.jpg    1x,
+                    ./images/women-mobile450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/women-tablet354.jpg    1x,
+                    ./images/women-tablet354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/women-desktop270.jpg    1x,
+                    ./images/women-desktop270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/women-desktop270.jpg"
+                  alt="Programista frontend"
+                />
+              </picture>
+
+              <!-- <img
                 class="team-card__photo"
                 src="./images/women.jpg"
                 alt="Programista frontend"
                 width="270"
                 height="260"
-              />
+              /> -->
               <h4 class="team-card__name">John Doe</h4>
               <p class="team-card__job">Frontend Developer</p>
               <ul class="social-list social-list--position">
@@ -354,13 +425,48 @@
               </ul>
             </li>
             <li class="team-card">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/mantwo-mobile450.jpg    1x,
+                    ./images/mantwo-mobile450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/mantwo-tablet354.jpg    1x,
+                    ./images/mantwo-tablet354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/mantwo-desktop270.jpg    1x,
+                    ./images/mantwo-desktop270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/mantwo-desktop270.jpg"
+                  alt="Pracownik marketingu"
+                />
+              </picture>
+
+              <!-- <img
                 class="team-card__photo"
                 src="./images/mantwo.jpg"
                 alt="Pracownik marketingu"
                 width="270"
                 height="260"
-              />
+              /> -->
               <h4 class="team-card__name">John Doe</h4>
               <p class="team-card__job">Marketing</p>
               <ul class="social-list social-list--position">
@@ -393,13 +499,48 @@
               </ul>
             </li>
             <li class="team-card">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/manthree-mobile450.jpg    1x,
+                    ./images/manthree-mobile450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/manthree-tablet354.jpg    1x,
+                    ./images/manthree-tablet354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                  type="image/jpg"
+                />
+                <source
+                  srcset="
+                    ./images/manthree-desktop270.jpg    1x,
+                    ./images/manthree-desktop270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                  type="image/jpg"
+                />
+                <img
+                  class="team-card__photo"
+                  src="./images/manthree-desktop270.jpg"
+                  alt="Projektant produktu"
+                />
+              </picture>
+
+              <!-- <img
                 class="team-card__photo"
                 src="./images/manthree.jpg"
                 alt="Projektant interfejsu użytkownika"
                 width="270"
                 height="260"
-              />
+              /> -->
               <h4 class="team-card__name">John Doe</h4>
               <p class="team-card__job">UI Designer</p>
               <ul class="social-list social-list--position">
@@ -433,7 +574,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ===== main section clients ===== -->
       <!-- <section class="section">
         <div class="container">

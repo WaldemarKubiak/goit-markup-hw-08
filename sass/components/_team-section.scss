@@ -1,0 +1,11 @@
+.section-team {
+  padding: 60px 0;
+
+  @include desktop {
+    padding: 94px 0;
+  }
+
+  &--bcg {
+    background-color: $background-tertiary;
+  }
+}

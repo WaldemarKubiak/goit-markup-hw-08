@@ -1,0 +1,14 @@
+.section-strenghts {
+  padding: 60px 0;
+
+  @include tablet {
+    &--position {
+      padding-bottom: 45px;
+    }
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+}

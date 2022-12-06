@@ -14,9 +14,12 @@
 @import "./components/mob-is-open"; //open mobile menu action
 @import "./components/overlay-main"; //main overlay - big picture under post
 @import "./components/overlay-post"; //post and btn - without main overlay
+@import "./components/strenght-section"; // padding for section Strenght in main
 @import "./components/strenght-wrapper"; //second section - agency page
 @import "./components/strenght-card"; //item-card in second section - agency page
+@import "./components/we-do-section"; //padding for section wedo with hidding it in mobile and tablet
 @import "./components/we-do"; //what-we-do third section
+@import "./components/team-section"; //padding for section Team in main
 @import "./components/team-wrapper"; //team section
 @import "./components/team"; //team-card without social-links
 @import "./components/social-list"; //common for team-card and footer-center

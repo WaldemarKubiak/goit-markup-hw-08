@@ -1,0 +1,15 @@
+.section-wedo {
+  padding: 94px 0;
+
+  @include phone {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
