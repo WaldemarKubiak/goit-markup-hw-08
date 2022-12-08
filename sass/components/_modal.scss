@@ -18,8 +18,11 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  max-height: 609px;
+  // width: 528px;
+  width: calc(100vw - 30px);
+  // height: 609px;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -28,6 +31,13 @@
     0px 2px 1px #00000033;
   border-radius: 4px;
   transform: translate(-50%, -50%);
+
+  @include desktop {
+    max-width: none;
+    max-height: none;
+    width: 528px;
+    height: 609px;
+  }
 
   &__btn-close {
     position: absolute;
@@ -128,9 +138,13 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    padding-left: 15px;
+    // padding-left: 15px;
     margin-top: 10px;
     margin-bottom: 20px;
+
+    @include desktop {
+      padding-left: 15px;
+    }
   }
 
   &__check-position {
@@ -139,12 +153,25 @@
   }
 
   &__statement-text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $text-secondary;
     margin-left: 8px;
+
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
+
+  // &__statement-text {
+  //   font-size: 14px;
+  //   line-height: 1.71;
+  //   letter-spacing: 0.03em;
+  //   color: $text-secondary;
+  //   margin-left: 8px;
+  // }
 
   &__btn {
     display: flex;
@@ -168,12 +195,25 @@
 }
 
 .data-form__statement-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $accent-primary;
   text-decoration: underline;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
+
+// .data-form__statement-link {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: $accent-primary;
+//   text-decoration: underline;
+// }
 
 .data-form__checkbox {
   position: absolute;
