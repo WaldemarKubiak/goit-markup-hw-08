@@ -1,9 +1,11 @@
 .footer-right {
-  display: flex;
+  @include desktop {
+    margin-left: 78px;
+  }
 }
 
 .newsletter-signup {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   gap: 20px;
 
@@ -15,15 +17,10 @@
     text-transform: uppercase;
     color: $text-tertiary;
   }
-
-  &__items {
-    display: inline-flex;
-    gap: 12px;
-  }
 }
 
 .newsletter-signup__input {
-  width: 358px;
+  width: 100%;
   padding: 14px 16px;
   border: 1px solid $border-tertiary-alpha;
   filter: drop-shadow(0px 4px 4px $shadow-primary);
@@ -35,6 +32,14 @@
   letter-spacing: 0.03em;
   color: $text-tertiary-alpha;
   transition: border-color $transition-time-animation;
+
+  @include tablet {
+    max-width: 450px;
+  }
+
+  @include desktop {
+    width: 358px;
+  }
 
   &:focus {
     border-color: $accent-primary;
@@ -57,7 +62,19 @@
   color: $text-tertiary;
   overflow: hidden;
   outline: 0;
+  margin-top: 20px;
   cursor: pointer;
+
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.newsletter-signup__items {
+  @include desktop {
+    display: inline-flex;
+    gap: 12px;
+  }
 }
 
 .newsletter-signup__btn-text {

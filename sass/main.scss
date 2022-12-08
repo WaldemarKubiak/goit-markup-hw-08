@@ -23,13 +23,14 @@
 @import "./components/team-wrapper"; //team section
 @import "./components/team"; //team-card without social-links
 @import "./components/social-list"; //common for team-card and footer-center
+@import "./components/clients-section"; // padding for section Clients in main
 @import "./components/clients"; //clients section with icons
 
 @import "./components/footer-wrapper";
-@import "./components/footer-left"; //margin-right
-@import "./components/adress"; //footer - adress group
-@import "./components/footer-center"; // heading without social-links
-@import "./components/footer-right"; //Newsletter input with btn send
+@import "./components/footer-logo"; // footer logo with adress wrapper
+@import "./components/footer-adress"; // footer - adress group
+@import "./components/footer-social"; // footer social-links group
+@import "./components/footer-mail"; // fotter Newsletter input with btn send
 
 @import "./components/modal"; //modal window with backdrop
 

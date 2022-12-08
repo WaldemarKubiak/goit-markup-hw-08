@@ -1,12 +1,28 @@
 .client-list {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  @include desktop {
+    flex-direction: unset;
+    flex-wrap: nowrap;
+  }
+
+  &__item {
+    width: calc((100% - 30px) / 2);
+
+    @include tablet {
+      width: calc((100% - 60px) / 3);
+    }
+  }
 }
 
 .client-list__link {
   display: flex;
+  justify-content: center;
   border: 1px solid $icon-primary;
   border-radius: 4px;
   fill: $icon-primary;
@@ -19,3 +35,25 @@
     fill: $accent-primary;
   }
 }
+
+// .client-list {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 30px;
+// }
+
+// .client-list__link {
+//   display: flex;
+//   border: 1px solid $icon-primary;
+//   border-radius: 4px;
+//   fill: $icon-primary;
+//   transition: border $transition-time-animation, fill $transition-time-animation;
+
+//   &:hover,
+//   &:focus {
+//     border: 1px solid $accent-primary;
+//     border-radius: 4px;
+//     fill: $accent-primary;
+//   }
+// }

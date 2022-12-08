@@ -5,8 +5,6 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
-  // font-size: 26px;
-  // line-height: 1.19;
   letter-spacing: 0.03em;
   color: $logo-primary;
 
@@ -18,7 +16,6 @@
     color: $logo-light;
   }
 
-  // HW8
   @include tablet {
     font-size: 26px;
     line-height: 1.19;
@@ -38,10 +35,6 @@
     margin-right: 93px;
   }
 }
-
-// .footer-left__logo {
-//   margin-bottom: 20px;
-// }
 
 // .mobile-header-page__logo {
 //   margin-right: 93px;

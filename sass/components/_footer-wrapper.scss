@@ -1,4 +1,22 @@
 .footer-wrapper {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  @include desktop {
+    text-align: unset;
+  }
 }
+
+// justify-content: center;
+// flex-wrap: wrap;
+// padding: 0 15px;
+// .footer-wrapper {
+//   display: flex;
+//   align-items: baseline;
+// }

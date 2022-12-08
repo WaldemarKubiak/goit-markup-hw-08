@@ -46,32 +46,10 @@ a {
   }
 }
 
-.section {
-  padding: 60px 0;
-
-  @include tablet {
-    &--position {
-      padding-bottom: 45px;
-    }
-  }
-
-  @include desktop {
-    padding-top: 94px;
-    padding-bottom: 0;
-  }
-
-  // &--position {
-  //   padding-bottom: 0;
-  // }
-
-  &--bcg {
-    background-color: $background-tertiary;
-  }
-}
-
 // common for title in: What we do, Team, Clients
 .section-team__heading,
-.section-wedo__heading {
+.section-wedo__heading,
+.section-clients__heading {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
@@ -80,9 +58,14 @@ a {
 
   @include desktop {
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
+}
+
+.footer {
+  background-color: $background-secondary;
+  padding: 60px 0;
 }
 
 // .section__heading {
@@ -93,7 +76,25 @@ a {
 //   margin-bottom: 50px;
 // }
 
-.footer {
-  background-color: $background-secondary;
-  padding: 60px 0;
-}
+// .section {
+//   padding: 60px 0;
+
+//   @include tablet {
+//     &--position {
+//       padding-bottom: 45px;
+//     }
+//   }
+
+//   @include desktop {
+//     padding-top: 94px;
+//     padding-bottom: 0;
+//   }
+
+//   // &--position {
+//   //   padding-bottom: 0;
+//   // }
+
+//   &--bcg {
+//     background-color: $background-tertiary;
+//   }
+// }
